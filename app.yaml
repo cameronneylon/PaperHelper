@@ -1,0 +1,15 @@
+application: cameronneylon-test
+version: 2
+runtime: python
+api_version: 1
+
+handlers:
+
+- url: /_wave/.*
+  script: paperhelper.py
+
+- url: /gadgets
+  static_dir: gadgets
+
+- url: /extensions
+  static_dir: extensions
